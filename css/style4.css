@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Rough", sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.inner {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(300deg, rgba(4, 12, 22, 0), #040c16), url(../images/bg.jpg);
+    /* background-image: url(../images/26.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstsection {
+    background: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#firstsection .container-fluid {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#firstsection h1 {
+    font-size: 4rem;
+    color: #CD5FF8;
+    font-weight: 600;
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#firstsection li a {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+#firstsection li a:hover {
+    transition: 0.5s;
+    transform: translateX(50%);
+    color: #CD5FF8;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#firstsection .btn {
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background: #4A2C67;
+    color: white;
+    /* border: 1px solid white; */
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+#firstsection .btn i{
+    padding: 7px;
+}
+
+#firstsection .btn:hover {
+    background: white;
+    color: #040c16;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px white;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#firstsection img {
+    /* background: red; */
+    width: 12%;
+}
+
+#firstsection .navbar-togglar-icon {
+    color: white;
+}
+
+#firstsection .active{
+    color: #CD5FF8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+.cursor {
+    height: 10px;
+    width: 10px;
+    background: gray;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.bgcolor {
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.secondsection {
+    margin-top: 100px;
+    /* background: red; */
+    opacity: 0;
+    animation: slideBottom 1.5s ease forwards;
+    animation-delay: 1s;
+
+}
+
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.secondsection .container-fluid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.secondsection h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.secondsection .col-lg-4 {
+    margin-top: 50px;
+}
+
+.secondsection .card:hover {
+    scale: 1.01;
+    transition: 1s;
+    box-shadow: rgba(126, 43, 147, 0.46) 0px 10px 20px 3px;
+}
+
+.secondsection h5 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.secondsection span {
+    color: #CD5FF8;
+}
+
+.secondsection .card {
+    background: transparent;
+    padding: 30px 0px;
+    margin: 10px;
+    height: 650px;
+    transition: 1s;
+    box-shadow: rgba(119, 53, 136, 0.46) 0px 4px 5px 3px;
+}
+
+.secondsection img {
+    width: 100%;
+    height: 250px;
+    background: none;
+}
+
+.secondsection .card-bottom {
+    padding: 15px;
+}
+
+.secondsection h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #CD5FF8;
+}
+
+.secondsection p {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.secondsection .btn {
+    margin-top: 20px;
+    background: #4A2C67;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.secondsection .btn:hover {
+    background: white;
+    color: #040c16;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.forthsection {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.forthsection .container-fluid {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.forthsection h1 {
+    font-size: 5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.forthsection span {
+    color: #CD5FF8;
+}
+
+.forthsection p {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.forthsection .col {
+    color: #4A2C67;
+    font-size: 2rem;
+}
+
+.forthsection i {
+    background: white;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.forthsection a{
+    color: #4A2C67;
+    text-decoration: none;
+}
+
+.forthsection i:hover {
+    color: #CD5FF8;
+    background: white;
+    box-shadow: 0px 0px 20px #CD5FF8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.fifthsection {
+    margin-top: 100px;
+    background: #4A2C67;
+    color: white;
+    text-align: center;
+}
+
+
+.fifthsection p {
+    font-size: 1.7rem;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:1200px) {
+
+    #firstsection .container-fluid {
+        width: 95%;
+    }
+
+    .secondsection .container-fluid {
+        width: 90%;
+    }
+
+    .thirdsection .container-fluid {
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:1024px){
+
+    .secondsection .container-fluid {
+        width: 95%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:991px){
+    
+    #firstsection .navbar-toggler {
+        background: #CD5FF8;
+        padding: 5px;
+        width: 5%;
+    }
+
+    #firstsection .container-fluid {
+        background: #040c16;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    #firstsection .ml-auto {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #firstsection {
+        background: #040c16;
+    }
+
+    .forthsection {
+        margin-top: 100px;
+    }
+
+    .forthsection .container-fluid {
+        width: 40%;
+    }
+
+    .forthsection .card{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:851px){
+
+    .forthsection .container-fluid {
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:767px){
+
+    #firstsection .navbar-toggler {
+        width: 7%;
+    }
+
+    .forthsection .container-fluid {
+        width: 60%;
+    }
+
+    .secondsection .card{
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:651px){
+
+    #firstsection .navbar-toggler {
+        width: 8%;
+    }
+
+    #firstsection h1 {
+        font-size: 3.5rem;
+    }
+
+    .forthsection .container-fluid {
+        width: 70%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:476px){
+
+    #firstsection .navbar-toggler {
+        width: 9%;
+    }
+
+    .secondsection .card{
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .forthsection .container-fluid{
+        width: 80%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:425px){
+
+    .secondsection h1{
+        font-size: 3.5rem;
+    }
+
+    .secondsection h5{
+        font-size: 1.5rem;
+    }
+
+    .secondsection p{
+        font-size: 1.5rem;
+    }
+
+    .forthsection h1{
+        font-size: 4rem;
+    }
+
+    .forthsection .container-fluid{
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+@media only screen and (max-width:375px){
+
+    #firstsection .navbar-toggler {
+        width: 12%;
+    }
+    
+    .forthsection .container-fluid{
+        width: 95%;
+    }
+
+
+}
+
+
+
+
